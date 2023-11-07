@@ -17,3 +17,50 @@ html {
 .container {
     margin: 0 auto;
 }
+
+a {
+    text-decoration: none;
+    padding: 3px 5px;
+    font-size: small;
+}
+
+.a-regular {
+    color: rgb(30, 30, 30);
+}
+
+.a-blue {
+    color: white;
+    background-color:#0061FF ;
+}
+
+/* HEADER */
+
+header .container {
+    min-height: 60px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+header .container .header-left {
+    min-width: 40%;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+header .container nav {
+    margin: 0 10px;
+}
+
+header .container .header-right {
+    min-width: 40%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
