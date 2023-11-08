@@ -20,7 +20,6 @@ html {
 
 .large-container, .medium-container, .small-container {
     margin: 0 auto;
-    border: 1px dashed black;
 }
 
 .large-container {
@@ -472,14 +471,18 @@ header .container .header-right {
     padding: 5px 15px;
 }
 
-/* SESTA SEZIONE SMALL MAIN */
+/* SETTIMA SEZIONE SMALL MAIN */
+
+.small-container.seventh {
+    padding: 100px 0;
+}
 
 .small-container.seventh li{
     width:95%;
 }
 
 .small-container.seventh h2 {
-    padding: 40px 0;
+    padding-bottom: 60px;
 }
 
 .FAQ-row {
@@ -498,4 +501,44 @@ header .container .header-right {
     align-items: center;
 }
 
+/* FOOTER */
+
+footer .container {
+    background-color: black;
+    min-height: 200px;
+}
+
+footer .medium-container {
+    min-height: 200px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-footer {
+    width: calc(100% / 6);
+    min-height: 100%;
+    color: white;
+}
+
+.info-footer li {
+    padding: 5px 0;
+}
+
+.info-footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 0;
+}
+
+.info-footer-title {
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.info-footer-body {
+    height: 80%;
+}
 
