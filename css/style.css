@@ -72,6 +72,13 @@ a {
 
 }
 
+.a-white {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid black;
+}
+
 .hr-small {
     width: 30%;
     border: 1px solid rgb(204, 204, 204);
@@ -81,10 +88,6 @@ img {
     width: 100%;
 }
 
-.reverse {
-    flex-direction: row-reverse;
-}
-
 .lightblue {
     background-color: #B4D0E7;
 }
@@ -92,6 +95,22 @@ img {
 li {
     list-style-type: none;
     padding: 10px 0;
+}
+
+.container-img-text {
+    display: flex;
+    min-height: 300px;
+} 
+
+.container-text {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-img {
+    width: 70%;
 }
 
 /* HEADER */
@@ -127,11 +146,7 @@ header .container .header-right {
 
 /* MAIN */
 
-main .container {
-    background-color: rgb(164, 242, 242);
-}
-
-.medium-container.jumbo {
+.large-container.jumbo {
     background-color: #B4D0E7;
 }
 
@@ -140,53 +155,45 @@ main .container {
     min-height: 150px;
 }
 
-.container-img-text {
-    display: flex;
-    height: 300px;
-} 
+.container-text.jumbo {
+    padding-bottom: 30px;
+    position: relative; top: 30px;
+}
 
-.jumbo-text {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.container-img.jumbo {
+    position: relative; top: 30px;
 }
 
 .fa-arrow-down {
     font-size: 30px;
 }
 
-.jumbo-img {
-    width: 70%;
-    position: relative;
+
+/* PRIMA SEZIONE MAIN   */
+
+.small-container {
+    min-height: 100px;
+    padding: 80px 0;
+    background-color: white;
 }
 
-.jumbo-img img {
-    position: absolute;
-}
-
-.small-container.first {
-    min-height: 400px;
-    padding: 50px 0;
-}
-
-.small-container.first input{
+.small-container input{
     transform: scale(1.2)
 }
 
 .radio-button {
     display: inline-block;
-    margin-top: 30px;
+    margin: 30px 10px;
 }
 
 .container-columns {
     width: 100%;
-    min-height: 800px;
+    min-height: 500px;
     display: flex;
     justify-content: space-between;
 }
 
-.my-row {
+.my-row{
     width: 30%;
     min-height: 500px;
     padding-top: 50px;
@@ -203,14 +210,18 @@ main .container {
     align-items: center;
 }
 
+.my-row-title i{
+    padding: 0 5px;
+}
+
 .my-row-content {
     padding: 10px 10px;
     font-size: small;
-    min-height: 900px;
+    min-height: 1100px;
 }
 
 .my-row-content div {
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .my-row-content #blue-button {
@@ -222,14 +233,134 @@ main .container {
     display: flex;
 }
 
-.offerte-piano div {
-    padding-right: 5px ;
+.offerte-piano i {
+    padding-right: 5px;
 }
 
 .offerte-piano.salienti i {
     font-size: large;
     color:#0062FF ;
 }
+
+/* SECONDA SEZIONE MAIN  */
+
+.small-container.second {
+    padding: 20px 0;
+    min-height: 100px;
+}
+
+.container-columns.second {
+    min-height: 100px ;
+}
+
+.my-row.second {
+    width: 100%;
+    margin: 10px 0;
+    padding-top: 0;
+    border: none;
+    min-height: 100px;
+}
+
+
+.my-row-content.second {
+    display: flex;
+    min-height: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.my-row-content.left {
+    width: 70%;
+    min-height: 100px;
+    padding: 10px;
+    border: none;
+}
+
+.my-row-content.right {
+    width: 30%;
+    min-height: 150px;
+    padding: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start
+}
+
+/* TERZA SEZIONE MAIN */
+
+.small-container.third {
+    min-height: 300px;
+    padding: 0;
+}
+
+.small-container.third .container-img-text {
+    min-height: 200px;
+}
+
+.container-img.partner {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-text.partner{
+    width: 40%;
+    padding: 30px 30px;
+    display: inline-block;
+}
+
+.container-text.partner div{
+    padding-bottom: 20px;
+}
+
+/* QUARTA SEZIONE MAIN */
+
+.my-row.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    width: 30%;
+    padding: 20px 0;
+}
+
+.container-img-text.cards {
+    flex-direction: column;
+    width: 100%;
+}
+
+.container-img-text.cards div {
+    margin-bottom: 10px;
+}
+
+.container-img.cards {
+    width: 100%;
+}
+
+.container-text.cards{
+    width: 100%;
+}
+
+/* QUINTA SEZIONE MAIN  */
+
+.small-container.fifth {
+    padding: 20px 0;
+}
+
+.small-container.fifth * {
+    width: 50%;
+    padding: 10px 0;
+}
+
+.small-container.fifth a {
+    font-weight: bold;
+}
+
+
 
 
 

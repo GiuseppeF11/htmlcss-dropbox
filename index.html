@@ -60,14 +60,14 @@
                                 in un unico posto
                             </h1>
                         </div>
-                        <div class="container-img-text">
-                            <div class="jumbo-text">
+                        <div class="container-img-text jumbo">
+                            <div class="container-text jumbo">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur beatae possimus voluptatibus eligendi vitae officia odio autem esse asperiores.</p>
                                 <a href="#" class="a-blue">Inizia la tua prova gratuita</a>
                                 <p>Annulla in qualsiasi momento</p>
                                 <a href="#"><i class="fa-solid fa-arrow-down a-regular"></i></a>
                             </div>
-                            <div class="jumbo-img"> 
+                            <div class="container-img jumbo"> 
                                 <img src="img/jumbo.png" alt="jumbo">
                             </div>
                         </div>
@@ -77,24 +77,27 @@
 
                 <section class="small-container first">
                     <h2>Trova il piano business che fa per te</h2>
-                    <div class="radio-button">
-                        <input type="radio">Frazionamento mensile
-                    </div>
-                    <div class="radio-button">
-                        <input type="radio">Frazionamento annuale
-                    </div>
 
+                    <form action="" class="abbonamento">
+                        <div class="radio-button">
+                            <input name="opzioni-offerta" type="radio" id="mensile">
+                            <label for="mensile">Frazionamento mensile</label>
+                        </div>
+                        <div class="radio-button">
+                            <input name="opzioni-offerta" type="radio" id="annuale">
+                            <label for="annuale">Frazionamento annuale</label>
+                        </div>
+                    </form>
                     <div class="container-columns">
                         <div class="my-row">
                             <div class="my-row-title">
                                 <i class="fa-solid fa-user"></i> Singolo
                             </div>
                             <div class="my-row-content">
-
                                 <ul> <h3>Professional</h3>
                                     
                                     <li>
-                                        € 12.00
+                                        <strong>€ 12.00</strong>
                                     </li> 
                                     
                                     <li>
@@ -143,21 +146,18 @@
                                         <div> Cartelle offline su dispositivi mobili</div>
                                     </li>
                                 </ul>
-                                
-
                             </div>
-
                         </div>
                         <div class="my-row">
                             <div class="my-row-title">
-                                <i class="fa-solid fa-user"></i> Singolo
+                                <i class="fa-solid fa-people-group"></i> Team
                             </div>
                             <div class="my-row-content">
 
                                 <ul> <h3>Advanced</h3>
                                     
                                     <li>
-                                        € 18.00
+                                        <strong>€ 18.00</strong>
                                     </li> 
                                     
                                     <li>
@@ -219,42 +219,41 @@
                                         <div>Gestione dei permessi in base ai ruoli</div>
                                     </li>
                                 </ul>
-                                
-
                             </div>
-
                         </div>
                         <div class="my-row">
                             <div class="my-row-title">
-                                <i class="fa-solid fa-user"></i> Singolo
+                                <i class="fa-solid fa-city"></i> Azienda
                             </div>
                             <div class="my-row-content">
 
-                                <ul> <h3>Professional</h3>
+                                <ul> <h3>Enterprise</h3>
                                     
                                     <li>
-                                        € 12.00
+                                        Contattaci
                                     </li> 
                                     
                                     <li>
-                                        /mese 
+                                        -
                                     </li>
 
                                 
                                     <li class="offerte-piano">
                                         <div><i class="fa-solid fa-user"></i></div>
-                                        <div> 1 utente</div>
+                                        <div>10 o più utenti</div>
                                     </li>
     
                                     <li class="offerte-piano">
                                         <div><i class="fa-solid fa-folder"></i></div>
-                                        <div> 5 TB di spazio di archiviazione sicuro</div>
+                                        <div> Soluzioni personalizzabili per la tua azienda</div>
                                     </li>
     
                                     <li class="offerte-piano">
                                         <div><i class="fa-solid fa-share-nodes"></i></div>
-                                        <div>Funzioni di produttività premium e condivisione
-                                            file semplice e sicura</div>
+                                        <div>
+                                            Assistenza personalizzata per aiutare gli 
+                                            amministratori in una gestione su larga scala
+                                        </div>
                                     </li>
                             
                                     <li id="blue-button">
@@ -282,40 +281,164 @@
                                         <div> Cartelle offline su dispositivi mobili</div>
                                     </li>
                                 </ul>
-                                
-
                             </div>
-
-                        </div>
-
                         </div>
                     </div>
                 </section>
 
-                <section class="small-container">
-                    Enterprise
-                </section>
+                <section class="small-container second">
+                    <div class="container-columns second">
+                        <div class="my-row second">
+                            <div class="my-row-title second">
+                                <i class="fa-solid fa-city"></i> Team
+                            </div>
+                            <div class="my-row-content second">
+                                <div class="my-row-content left">
+                                    <ul> <h3>Enterprise</h3>
+                                        
+                                        <li>
+                                            <strong>Contatta l'ufficio vendite per i prezzi</strong>
+                                        </li> 
 
-                <section class="small-container">
-                    <div class="container-img-text reverse">
-                        <div class="jumbo-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur beatae possimus voluptatibus eligendi vitae officia odio autem esse asperiores.</p>
-                            <a href="#" class="a-blue">Inizia la tua prova gratuita</a>
-                            <p>Annulla in qualsiasi momento</p>
-                            <i class="fa-solid fa-arrow-down"></i>
-                        </div>
-                        <div class="jumbo-img"> 
-                            <img src="img/jumbo.png" alt="">
+                                        <li>
+                                            Soluzioni personalizzate e supporto su misura 
+                                            per aiutare i professionisti 
+                                            IT nella gestione
+                                            su qualsiasi scala
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="my-row-content right">
+                                    <a href="#" class="a-blue">Contatta l'ufficio vendite</a>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </section>
 
-                <section class="small-container">
-                    Esegui più operazioni
+                <section class="small-container third">
+                    <div class="container-img-text partner">
+                        <div class="container-img partner">
+                            <img src="img/partner.png" alt="partner">
+                        </div>
+
+                        <div class="container-text partner">
+                            <div><h3>Entra in contatto con un partner Dropbox</h3></div>
+                            <div>
+                                <p>Trova un partner Dropbox e Hellosign di fiducia
+                                    Ottien le soluzioni e i servizi necessario per raggiungere obiettivi 
+                                    aziendali, tra cui implementazione, integrazione, gestione e supporto continui.
+                                </p>
+                            </div>
+                            <div>
+                                <a href="#" class="a-white">Trova un partner</a>
+                            </div>
+                        </div> 
+                    </div>
                 </section>
 
-                <section class="small-container">
-                    Più di 500.000 team
+                <section class="small-container fourth">
+                    <h2>Esegui più operazioni con Dropbox Business</h2>
+                    <div class="container-columns cards">
+                        <div class="my-row cards">
+                            <div class="card">
+                                <div class="container-img-text cards">
+                                    <div class="container-img cards">
+                                        <img src="img/business-feature-switching-tools.png" alt="">
+                                    </div>
+                                    <div class="container-text cards">
+                                        <div>
+                                            <h3>Passa di meno da uno strumento all'altro</h3>
+                                        </div>
+                                        <div>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates officiis maxime veniam nihil, sint a quod quis quam voluptate, quasi deleniti fugit quae. Quasi omnis dignissimos voluptatibus cupiditate et.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="container-img-text cards">
+                                    <div class="container-img cards">
+                                        <img src="img/business-feature-send-files-it.png" alt="">
+                                    </div>
+                                    <div class="container-text cards">
+                                        <div>
+                                            <h3>Passa di meno da uno strumento all'altro</h3>
+                                        </div>
+                                        <div>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates officiis maxime veniam nihil, sint a quod quis quam voluptate, quasi deleniti fugit quae. Quasi omnis dignissimos voluptatibus cupiditate et.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="container-img-text cards">
+                                    <div class="container-img cards">
+                                        <img src="img/business-feature-security.png" alt="">
+                                    </div>
+                                    <div class="container-text cards">
+                                        <div>
+                                            <h3>Passa di meno da uno strumento all'altro</h3>
+                                        </div>
+                                        <div>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates officiis maxime veniam nihil, sint a quod quis quam voluptate, quasi deleniti fugit quae. Quasi omnis dignissimos voluptatibus cupiditate et.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="container-img-text cards">
+                                    <div class="container-img cards">
+                                        <img src="img/business-feature-multi-device.png" alt="">
+                                    </div>
+                                    <div class="container-text cards">
+                                        <div>
+                                            <h3>Passa di meno da uno strumento all'altro</h3>
+                                        </div>
+                                        <div>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates officiis maxime veniam nihil, sint a quod quis quam voluptate, quasi deleniti fugit quae. Quasi omnis dignissimos voluptatibus cupiditate et.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="container-img-text cards">
+                                    <div class="container-img cards">
+                                        <img src="img/business-feature-integrations-it.png" alt="">
+                                    </div>
+                                    <div class="container-text cards">
+                                        <div>
+                                            <h3>Passa di meno da uno strumento all'altro</h3>
+                                        </div>
+                                        <div>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates officiis maxime veniam nihil, sint a quod quis quam voluptate, quasi deleniti fugit quae. Quasi omnis dignissimos voluptatibus cupiditate et.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="container-img-text cards">
+                                    <div class="container-img cards">
+                                        <img src="img/business-feature-coordinate-it.png" alt="">
+                                    </div>
+                                    <div class="container-text cards">
+                                        <div>
+                                            <h3>Passa di meno da uno strumento all'altro</h3>
+                                        </div>
+                                        <div>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates officiis maxime veniam nihil, sint a quod quis quam voluptate, quasi deleniti fugit quae. Quasi omnis dignissimos voluptatibus cupiditate et.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="small-container fifth">
+                    <h2>Più di 500.000 team utilizzano Dropbox Business</h2>
+                    <a href="#">Scopri di più sui nostri clienti</a>
                 </section>
 
                 <section class="large-container">
