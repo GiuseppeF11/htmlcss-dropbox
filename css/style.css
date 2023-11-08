@@ -146,7 +146,9 @@ header .container .header-right {
 
 /* MAIN */
 
-.large-container.jumbo {
+
+/* PRIMA SEZIONE LARGE MAIN */
+.large-container.first {
     background-color: #B4D0E7;
 }
 
@@ -169,7 +171,7 @@ header .container .header-right {
 }
 
 
-/* PRIMA SEZIONE MAIN   */
+/* PRIMA SEZIONE SMALL MAIN   */
 
 .small-container {
     min-height: 100px;
@@ -242,7 +244,7 @@ header .container .header-right {
     color:#0062FF ;
 }
 
-/* SECONDA SEZIONE MAIN  */
+/* SECONDA SEZIONE SMALL MAIN  */
 
 .small-container.second {
     padding: 20px 0;
@@ -287,7 +289,7 @@ header .container .header-right {
     align-items:flex-start
 }
 
-/* TERZA SEZIONE MAIN */
+/* TERZA SEZIONE SMALL MAIN */
 
 .small-container.third {
     min-height: 300px;
@@ -314,7 +316,7 @@ header .container .header-right {
     padding-bottom: 20px;
 }
 
-/* QUARTA SEZIONE MAIN */
+/* QUARTA SEZIONE SMALL MAIN */
 
 .my-row.cards {
     display: flex;
@@ -345,7 +347,7 @@ header .container .header-right {
     width: 100%;
 }
 
-/* QUINTA SEZIONE MAIN  */
+/* QUINTA SEZIONE SMALL MAIN  */
 
 .small-container.fifth {
     padding: 20px 0;
@@ -360,9 +362,78 @@ header .container .header-right {
     font-weight: bold;
 }
 
+/* SECONDA SEZIONE LARGE MAIN */
 
+.large-container.second {
+    display: flex;
+    justify-content: center;
+}
 
+.card-logo {
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+}
 
+.card-logo.center {
+    background-color: #F5F5F5;
+    padding: 20px 30px;
+}
+
+.card-logo.center div {
+    padding: 20px 0;
+}
+
+.card-logo.center img {
+    width: 200px;
+}
+
+.card-logo.center hr {
+    width: 50px;
+}
+
+.card-logo.box {
+    background-color: chocolate;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-logo {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-logo img {
+    width: 70%;
+    filter: invert(1);
+}
+
+.red-box {
+    background-color: red;
+}
+
+.brown-box {
+    background-color: #61082B;
+}
+
+.yellow-box {
+    background-color: #FFD830;
+}
+
+.green-box {
+    background-color: #A2D39B;
+    border: 10px solid #D1E9CD;
+}
+
+.blue-box {
+    background-color: #0D2481 ;
+}
+
+.heavenly-box {
+    background-color: #5c93ed;
+}
 
 
 
