@@ -35,12 +35,14 @@ html {
 h1 {
     text-align: center;
     font-size: 45px;
-    font-weight:bolder;
+    font-weight:900;
     letter-spacing: 4px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.514);
 }
 
 h2 {
     letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.885);
 }
 
 p {
@@ -105,6 +107,10 @@ li {
 
 .container-img {
     width: 70%;
+}
+
+.white-button {
+    background-color: white;
 }
 
 /* HEADER */
@@ -485,14 +491,16 @@ header .container .header-right {
 .FAQ-row {
     padding: 10px 0;
     display: flex;
+    align-items: center;
 }
 
 .FAQ-row i {
     padding: 5px;
 }
 
-.FAQ-row a {
-    width: 5%;
+.FAQ-row button {
+    width: 20px;
+    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -539,3 +547,27 @@ footer .medium-container {
     height: 80%;
 }
 
+/* ANIMAZIONI UTENTE */
+
+.a-white:hover , .large-container.third .right a:hover,
+.a-regular:hover , .a-blue:hover , .info-footer a:hover, 
+a:hover {
+    transition: 1s;
+}
+
+.a-regular:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.a-blue:hover {
+    background-color: #78acff;
+}
+
+
+.a-blue:hover, a:hover {
+    transform: scale(1.2);
+}
+
+.a-white:hover , .large-container.third .right a:hover, .info-footer a:hover {
+    background-color: #aaaaaa;
+}
