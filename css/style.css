@@ -175,7 +175,7 @@ header .container .header-right {
 
 .small-container {
     min-height: 100px;
-    padding: 80px 0;
+    padding: 30px 0;
     background-color: white;
 }
 
@@ -435,6 +435,42 @@ header .container .header-right {
     background-color: #5c93ed;
 }
 
+/* SESTA SEZIONE SMALL MAIN */
+
+.large-container.third {
+    min-height: 100px;
+}
+
+.large-container.third h2 {
+    color: #61082B;
+}
+
+.large-container.third div {
+}
+
+.large-container.third .small-container {
+    padding: 0;
+}
+
+.large-container.third .container-img-text {
+    min-height: 200px;
+}
+
+.large-container.third .left , .large-container.third .right {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.large-container.third .right {
+    justify-content: flex-end;
+}
+
+.large-container.third .right a {
+    border: none;
+    background-color: #FFFFFF;
+    padding: 5px 15px;
+}
 
 
 
