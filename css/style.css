@@ -472,6 +472,30 @@ header .container .header-right {
     padding: 5px 15px;
 }
 
+/* SESTA SEZIONE SMALL MAIN */
 
+.small-container.seventh li{
+    width:95%;
+}
+
+.small-container.seventh h2 {
+    padding: 40px 0;
+}
+
+.FAQ-row {
+    padding: 10px 0;
+    display: flex;
+}
+
+.FAQ-row i {
+    padding: 5px;
+}
+
+.FAQ-row a {
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
