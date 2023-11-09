@@ -12,15 +12,16 @@
 */
 html {
     font-family: 'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .container .large-container, .medium-container, .small-container {
     margin: 0 auto;
+    min-height: 100px;
 }
 
 .large-container {
     width: 100%;
-    min-height: 100px;
 }
 
 .medium-container {
@@ -29,7 +30,8 @@ html {
 
 .small-container {
     width: 50%;
-    background-color: rgb(234, 225, 169);
+    padding: 70px 0;
+    background-color: white;
 }
 
 h1 {
@@ -52,27 +54,31 @@ p {
 a {
     padding: 10px;
     font-size: small;
-    display: inline-block;
 }
 
 .a-regular {
     color: black;
     text-decoration: none;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .a-blue {
     color: white;
     background-color:#0061FF;
     text-decoration: none;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .a-white {
     color: black;
     text-decoration: none;
-    text-align: center;
     border: 1px solid black;
+    justify-content: center;
+    align-items: center;
 }
 
 .hr-small {
@@ -144,6 +150,10 @@ header .container .header-right {
     justify-content: flex-end;
 }
 
+#logo-dropbox {
+    display: flex;
+}
+
 /* MAIN */
 
 /* PRIMA SEZIONE LARGE MAIN */
@@ -156,12 +166,16 @@ header .container .header-right {
     align-items: center;
 }
 
-.large-container.first a {
+.container-text.jumbo .a-blue {
     width: 80%;
 }
 
+.container-text.jumbo .fa-arrow-down {
+    width: 20%;
+}
+
 .container-text.jumbo {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     position: relative; top: 40px;
 }
 
@@ -175,10 +189,8 @@ header .container .header-right {
 
 /* PRIMA SEZIONE SMALL MAIN   */
 
-.small-container {
+.small-container.first {
     min-height: 100px;
-    padding: 30px 0;
-    background-color: white;
 }
 
 .small-container input{
@@ -221,16 +233,12 @@ header .container .header-right {
 .my-row-content {
     padding: 10px 10px;
     font-size: small;
-    min-height: 1100px;
+    min-height: 1000px;
 }
 
 .my-row-content div {
-    padding: 20px 0;
-}
-
-.my-row-content #blue-button {
-    display: flex;
-    justify-content: center;
+    padding: 10px 0;
+    min-height: 30px;
 }
 
 .offerte-piano {
@@ -249,7 +257,6 @@ header .container .header-right {
 /* SECONDA SEZIONE SMALL MAIN  */
 
 .small-container.second {
-    padding: 20px 0;
     min-height: 100px;
 }
 
@@ -302,12 +309,6 @@ header .container .header-right {
     min-height: 200px;
 }
 
-.container-img.partner {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-}
-
 .container-text.partner{
     width: 40%;
     padding: 30px 30px;
@@ -356,7 +357,7 @@ header .container .header-right {
 }
 
 .small-container.fifth * {
-    width: 50%;
+    width: 70%;
     padding: 10px 0;
 }
 
@@ -447,9 +448,6 @@ header .container .header-right {
     color: #61082B;
 }
 
-.large-container.third div {
-}
-
 .large-container.third .small-container {
     padding: 0;
 }
@@ -489,21 +487,23 @@ header .container .header-right {
 }
 
 .FAQ-row {
-    padding: 10px 0;
+    padding: 20px 0;
     display: flex;
     align-items: center;
+    border-top: 1px solid black;
 }
 
-.FAQ-row i {
-    padding: 5px;
+.FAQ-row:last-of-type {
+    border-bottom: 1px solid black;
 }
 
 .FAQ-row button {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(128, 128, 128, 0.473);
 }
 
 /* FOOTER */
@@ -547,12 +547,12 @@ footer .medium-container {
     height: 80%;
 }
 
-/* ANIMAZIONI UTENTE */
+/* EFFETTI */
 
 .a-white:hover , .large-container.third .right a:hover,
-.a-regular:hover , .a-blue:hover , .info-footer a:hover, 
-a:hover {
+.a-regular:hover , .a-blue:hover , .info-footer a:hover {
     transition: 1s;
+    transform: scale(1.1);
 }
 
 .a-regular:hover {
@@ -563,11 +563,51 @@ a:hover {
     background-color: #78acff;
 }
 
-
-.a-blue:hover, a:hover {
-    transform: scale(1.2);
+.a-white:hover , .large-container.third a:hover, .info-footer a:hover {
+    background-color: #aaaaaa;
 }
 
-.a-white:hover , .large-container.third .right a:hover, .info-footer a:hover {
-    background-color: #aaaaaa;
+/* DROPDOWN */
+  
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+top: 30px;
+background-color: #d6d6d6;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.556);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 10px 16px;
+text-decoration: none;
+display: flex;
+align-items: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #bebebe;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown-content i , .select-language {
+    padding-right: 10px;
+    min-width: 30px;
+    text-align: center;
+}
+
+.dropdown-content #span-text {
+    min-width: 70%;
+}
+
+.select-language {
+    width: 20px;
 }
