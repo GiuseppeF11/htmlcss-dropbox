@@ -608,11 +608,9 @@ align-items: center;
 input {
     position: absolute;
     opacity: 0;
-    z-index: -1;
 }
 
 .accordion {
-    border-radius: 5px;
     overflow: hidden;
     font-size: small;
 }
@@ -631,11 +629,21 @@ input {
 .accordion-content {
     max-height: 0;
     padding: 0 1em;
-    background: white;
+    background: rgb(219, 219, 219);
     transition: all 0.3s;
 }
 
 input:checked ~ .accordion-content {
     max-height: 100vh;
     padding: 1em;
+}
+
+input:checked ~ .accordion-label i {
+    transition: 0.5s ;
+    rotate: 180deg;
+}
+
+input:not(:checked) ~ .accordion-label i {
+    transition: 0.5s ;
+    rotate: 0;
 }
